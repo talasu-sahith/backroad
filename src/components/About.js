@@ -2,16 +2,16 @@ import Title from "./Title";
 import img1 from "../images/about.jpeg";
 const About = () => {
   return (
-    <section class="section" id="about">
-      <div class="section-title">
+    <section className="section" id="about">
+      <div className="section-title">
         <Title title={"about"} subtitle={"us"} />
       </div>
 
-      <div class="section-center about-center">
-        <div class="about-img">
-          <img src={img1} class="about-photo" alt="awesome beach" />
+      <div className="section-center about-center">
+        <div className="about-img">
+          <img src={img1} className="about-photo" alt="awesome beach" />
         </div>
-        <article class="about-info">
+        <article className="about-info">
           <h3>explore the difference</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
@@ -23,7 +23,7 @@ const About = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#" class="btn">
+          <a href="#" className="btn">
             read more
           </a>
         </article>

@@ -3,21 +3,21 @@ import { service } from "../data";
 
 const Services = () => {
   return (
-    <section class="section services" id="services">
-      <div class="section-title">
+    <section className="section services" id="services">
+      <div className="section-title">
         <Title title={"our"} subtitle={"services"} />
       </div>
-      <div class="section-center services-center">
+      <div className="section-center services-center">
         {service.map((item) => {
           const { id, icon, title, text } = item;
           return (
-            <article class="service" key={id}>
-              <span class="service-icon">
-                <i class={icon}></i>
+            <article className="service" key={id}>
+              <span className="service-icon">
+                <i className={icon}></i>
               </span>
-              <div class="service-info">
-                <h4 class="service-title">{title}</h4>
-                <p class="service-text">{text}</p>
+              <div className="service-info">
+                <h4 className="service-title">{title}</h4>
+                <p className="service-text">{text}</p>
               </div>
             </article>
           );

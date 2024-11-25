@@ -3,12 +3,12 @@ import { trips } from "../data";
 
 const Tours = () => {
   return (
-    <section class="section" id="tours">
-      <div class="section-title">
+    <section className="section" id="tours">
+      <div className="section-title">
         <Title title={"featured"} subtitle={"tours"} />
       </div>
 
-      <div class="section-center featured-center">
+      <div className="section-center featured-center">
         {trips.map((item) => {
           const {
             src,
@@ -22,20 +22,20 @@ const Tours = () => {
             icon,
           } = item;
           return (
-            <article class="tour-card" key={id}>
-              <div class="tour-img-container">
-                <img src={src} class="tour-img" alt="" />
-                <p class="tour-date">{date}</p>
+            <article className="tour-card" key={id}>
+              <div className="tour-img-container">
+                <img src={src} className="tour-img" alt="" />
+                <p className="tour-date">{date}</p>
               </div>
-              <div class="tour-info">
-                <div class="tour-title">
+              <div className="tour-info">
+                <div className="tour-title">
                   <h4>{title}</h4>
                 </div>
                 <p>{text}</p>
-                <div class="tour-footer">
+                <div className="tour-footer">
                   <p>
                     <span>
-                      <i class={icon}></i>
+                      <i className={icon}></i>
                     </span>{" "}
                     {country}
                   </p>

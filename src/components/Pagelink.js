@@ -2,7 +2,7 @@ const Pagelink = ({ item, itemclass }) => {
   const { id, href, link } = item;
   return (
     <li key={id}>
-      <a href={href} rel="nonreferrer" class={itemclass}>
+      <a href={href} rel="nonreferrer" className={itemclass}>
         {" "}
         {link}{" "}
       </a>
